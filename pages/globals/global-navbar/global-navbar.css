@@ -1,0 +1,67 @@
+html{
+    background-color: #1d1d1f;
+}
+body {
+    font-family: font-regular !important;
+}
+b{
+    font-family: font-bold !important;
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin: 0;
+    background: rgba(29, 29, 31, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 1;
+}   
+.nav-content {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+.nav-content a {
+    display: block;
+    line-height: 44px;
+    color: transparent;
+}
+.logo-div{
+    max-width: 980px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img{
+    height: 25px;
+}
+
+
+@media screen and (max-width: 980px) {
+    html{
+        background-color: #1d1d1f;
+    }
+    nav{
+        position: sticky;
+        position: -webkit-sticky;
+        background: rgb(29, 29, 31);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: none;
+    }
+}
+
+/* Ignore, nothing to do with navigation bar. */
+img {
+    pointer-events: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+::selection {
+    background: green;
+    color: white;
+}
