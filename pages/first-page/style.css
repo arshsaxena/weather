@@ -141,7 +141,7 @@ nav{
     padding-top: 15px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 825px) {
     html{
         background-color: #1d1d1f;
         margin: 0px;
@@ -222,7 +222,8 @@ nav{
         border: none;
     }
     .city-country-div{
-        font-size: 35px;
+        width: fit-content;
+        font-size: 25px;
         margin-top: 10px;
         margin: 0 auto;
         border: none;
@@ -248,6 +249,9 @@ nav{
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border: none;
+    }
+    .weather-condition{
+        font-size: 25px;
     }
     .weather-div2 {
         width: 100%;
@@ -341,7 +345,7 @@ nav{
     .category-title-div{
         margin-bottom: 10px;
     }
-    .weather-condition, .min-temp, .max-temp, .feeltemp, .pressure, .humidity, .wind-speed, .wind-dir{
+    .min-temp, .max-temp, .feeltemp, .pressure, .humidity, .wind-speed, .wind-dir{
         font-size: 30px;
     }
     .small-unit{
