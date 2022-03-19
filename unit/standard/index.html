@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <title>Standard | Weather by Arsh</title>
+
+    <meta name="description" content="Namaste. This is a very simple and free Weather app by Arsh. Find out the current temperature, feels like temperature, minimum temperature, maximum temperature, clouds cover, pressure, humidity, wind speed, and wind direction of any place.">
+    <meta name="author" content="Arsh Saxena">
+    <meta name="keywords" content="Arsh Saxena, arsh.saxena02, GitHub, Coding, Indian, Student, weather, current temperature, feels like temperature, minimum temperature, maximum temperature, clouds cover, pressure, humidity, wind speed, wind direction, haze, clear, cloudy, thunderstorm, sunny, rainy, snow">
+    
+    <link rel="stylesheet" href="/unit/style.css">
+    <link rel="stylesheet" href="/pages/globals/global-fonts.css">
+    <link rel="stylesheet" href="/pages/globals/global-navbar/global-navbar.css">
+    <link rel="stylesheet" href="/pages/globals/global-footer/global-footer.css">
+    <link rel="stylesheet" href="/pages/globals/global-scrollbar.css">
+    <link rel="stylesheet" href="/pages/globals/global-top-button/global-top-button.css">
+    <link rel="stylesheet" href="/pages/globals/global-preloader/global-preloader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta name="theme-color" content="#1d1d1f">
+    <meta name="msapplication-navbutton-color" content="#1d1d1f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1d1d1f">
+
+    <link rel="icon" href="/resources/first-page/icons/weather.png">
+    <link rel="apple-touch-icon" href="./resources/first-page/icons/weather.png">
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "b1zr8wxxis");
+    </script>
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#nav").load("/pages/globals/global-navbar/global-navbar.html"); 
+        $("#footer").load("/pages/globals/global-footer/global-footer.html");
+        $("#top-button").load("/pages/globals/global-top-button/global-top-button.html");
+        });
+    </script>
+    <div class="container">
+        <span id="top-button"></span>
+        <nav class="nav" id="nav"> 
+        </nav>
+        <noscript>Please enable JavaScript!</noscript>
+        <div class="main-head">
+            <div class="input-div">
+                <input type="text" id="input-box" class="input-box" placeholder="Search for a city" autocomplete="off">
+            </div>
+            <div class="instructions">
+                To get weather, enter a city name and then press enter or return on keyboard.
+            </div>
+            <div class="weather-container">
+                <div class="weather-subcontainer1">
+                    <div class="date-day-div">
+                        <b>
+                            <span class="date" id="date"></span>
+                            <span class="day" id="day"></span>
+                        </b>
+                    </div>
+                    <div class="city-country-div">
+                        <span class="city" id="city"></span>
+                        <span class="country" id="country"></span>
+                    </div>
+                </div>
+                <div class="weather-subcontainer2">
+                    <div class="weather-div1">
+                        <div class="temp-div">
+                            <span class="temp" id="temp"></span>
+                        </div>
+                        <div class="weather-condition-div">
+                            <span class="weather-condition" id="weather-condition"></span>
+                        </div>
+                        <div class="weather-div1-sub">
+                            <div class="min-temp-div">
+                                <div class="category-title-div">MINIMUM</div>
+                                <span class="min-temp" id="min-temp"></span>
+                            </div>
+                            <div class="max-temp-div">
+                                <div class="category-title-div">
+                                    MAXIMUM
+                                </div>
+                                <span class="max-temp" id="max-temp"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-div2">
+                        <div class="weather-div2-sub1">
+                            <div class="feeltemp-div">
+                                <div class="category-title-div">
+                                    FEELS LIKE
+                                </div>
+                                <span class="feeltemp" id="feeltemp"></span>
+                            </div>
+                            <div class="clouds-div">
+                                <div class="category-title-div">
+                                    CLOUDS
+                                </div>
+                                <span class="clouds" id="clouds"></span>
+                            </div>
+                        </div>
+                        <div class="weather-div2-sub2">
+                            <div class="pressure-div">
+                                <div class="category-title-div">
+                                    PRESSURE
+                                </div>
+                                <span class="pressure" id="pressure"></span> <span class="small-unit">hPa</span>
+                            </div>
+                            <br>
+                            <div class="humidity-div">
+                                <div class="category-title-div">
+                                    HUMIDITY
+                                </div>
+                                <span class="humidity" id="humidity"></span>
+                            </div>
+                        </div>
+                        <div class="weather-div2-sub3">
+                            <div class="wind-speed-div">
+                                <div class="category-title-div">
+                                    WIND SPEED
+                                </div>
+                                <span class="wind-speed" id="wind-speed"></span> <span class="small-unit">km/h</span>
+                            </div>
+                            <div class="wind-dir-div">
+                                <div class="category-title-div">
+                                    WIND DIRECTION
+                                </div>
+                                <span class="wind-dir" id="wind-dir"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <span class="footer-conatiner">
+            <footer>
+                <div class="footer" id="footer-part">
+                    <div class="footnote">
+                        Current temperature, feels like temperature, minimum temperature, maximum temperature: K; Pressue: hPa; Wind speed: km/h
+                    </div>
+                    <div class="footer-text">
+                        <img src="/resources/first-page/icons/arsh.png" alt="arsh-img-footer">
+                        <span class="path">
+                            <span class="arrow"><i class="fa fa-angle-right"></i></span>
+                        </span> 
+                        <img src="/resources/first-page/icons/weather.png" alt="weather-img-footer">
+                        <span class="path">
+                            <span class="page-name">&nbsp;Weather by Arsh</span>
+                            <span class="arrow"><i class="fa fa-angle-right"></i></span>
+                            <span class="page-name">Standard</span>
+                        </span>                 
+                    </div>
+                </div>
+            </footer>
+            <footer id="footer"></footer>
+        </span>
+    </div>
+</body>
+</html>

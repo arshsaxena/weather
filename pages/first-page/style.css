@@ -33,96 +33,35 @@ nav{
     background-color: transparent;
     border-radius: 20px;
 }
-.input-div input {
-    box-sizing: border-box;
-    padding: 5px 15px;
-    font-size: 21px;
-    text-align: center;
-    border-radius: 15px;
-    background-color: #1d1d1f75;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    border: none;
+.heading-container{
     width: 100%;
-    height: 40px;
-    overflow-y: hidden;
-    font-family: font-regular;
-    resize: none;
-}
-.input-div input::placeholder{
-    color: rgb(184, 184, 184);
-}
-.instructions{
-    width: fit-content;
-    margin-top: 5px;
-    padding: 5px 12.5px;
-    color: rgb(184, 184, 184);
-    border-radius: 15px;
-    background-color: #1d1d1f75;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-.weather-container {
-    display: none;
-    color: white;
-    padding: 20px;
-    margin-top: 5px;
-    border-radius: 15px;
-    background-color: #1d1d1f75;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-.weather-subcontainer1, .weather-subcontainer2{
-    display: flex;
-}
-.weather-subcontainer1{
-    margin-bottom: 15px;
-}
-.weather-div1 {
-    width: 50%;
-}
-.date-day-div{
-    font-size: 17px;
-    width: 50%;
-    order: 2;
-    text-align: right;
-}
-.city-country-div{
-    font-size: 30px;
-    margin-top: 10px;
-    width: 50%;
-    margin: 0;
-}
-.temp-div {
-    font-size: 100px;
-}
-.weather-div2 {
-    width: 50%;
-    float: right;
-    text-align: right;
-}
-.weather-div1-sub, .weather-div2-sub1, .weather-div2-sub2, .weather-div2-sub3 {
-    display: flex;
-}
-.weather-div2-sub1, .weather-div2-sub2{
-    margin-bottom: 20px;
-}
-.min-temp-div{
-    width: 30%;
-}
-.feeltemp-div, .clouds-div, .pressure-div, .humidity-div, .wind-speed-div, .wind-dir-div{
-    width: 50%;
-}
-.weather-condition-div{
-    font-size: 30px;
     margin-bottom: 10px;
 }
-.category-title-div{
-    margin-bottom: 5px;
-}
-.min-temp, .max-temp, .feeltemp, .clouds, .pressure, .humidity, .wind-speed, .wind-dir{
+.heading-div{
+    background-color: #1d1d1f75;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    letter-spacing: 0px;
     font-size: 30px;
+}
+.button-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.unit-button{
+    background-color: #1d1d1f75;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    letter-spacing: 0px;
+    font-size: 25px;
+}
+.button-container a:hover .unit-button{
+    background-color: #1d1d1fab;
 }
 .footnote {
     padding-bottom: 10px;
@@ -155,200 +94,41 @@ nav{
     }
     .main-head{
         display: block;
-        max-width: 940px;
+        max-width: 980px;
         width: 90% !important;
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        background-color: transparent;
-        border-radius: 20px;
     }
-    .input-div{
-        margin: 0 auto;
-    }
-    .input-div input {
-        padding: 5px 15px;
-        font-size: 21px;
-        text-align: center;
+    .heading-div{
+        background-color: #1d1d1f75;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 15px;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        color: white;
-        border: none;
-        height: 40px;
-        overflow-y: hidden;
-        font-family: font-regular;
-        resize: none;
-    }
-    .input-div input::placeholder{
-        color: rgb(184, 184, 184);
-    }
-    .weather-container {
-        display: none;
-        color: white;
-        padding: 0px;
-        margin-top: 5px;
-        border-radius: 15px;
-        background-color: transparent;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-    }
-    .weather-subcontainer1, .weather-subcontainer2{
-        display: block;
-    }
-    .weather-subcontainer1{
-        text-align: center;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 20px 10px 0px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border: none;
-        margin-bottom: 0;
-    }
-    .weather-div1 {
-        width: 100%;
-    }
-    .date-day-div{
-        font-size: 17px;
-        width: max-content;
-        margin: 0 auto;
-        order: 2;
-        text-align: center;
-        margin-bottom: 10px;
-        border: none;
-    }
-    .city-country-div{
-        width: fit-content;
-        font-size: 25px;
-        margin-top: 10px;
-        margin: 0 auto;
-        border: none;
-    }
-    .temp-div {
-        font-size: 100px;
-        margin: 0 auto;
-        text-align: center;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 0px 10px 0px;
-        border: none;
-    }
-    .weather-condition-div{
-        margin: 0 auto;
-        text-align: center;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 0px 10px 15px;
-        margin-bottom: 10px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border: none;
-    }
-    .weather-condition{
+        padding: 20px;
+        letter-spacing: 0px;
         font-size: 25px;
     }
-    .weather-div2 {
+    .button-container{
         width: 100%;
-        float: none;
-        text-align: left;
-    }
-    .weather-div1-sub, .weather-div2-sub1, .weather-div2-sub2, .weather-div2-sub3 {
-        display: flex;
-    }
-    .weather-div2-sub1, .weather-div2-sub2{
-        margin-bottom: 0px;
-    }
-    .min-temp-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-right: 5px;
-    }
-    .max-temp-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-left: 5px;
-    }
-    .feeltemp-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 5px;
-    }
-    .clouds-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-    }
-    .pressure-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-right: 5px;
-    }
-    .humidity-div, .wind-dir-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-left: 5px;
-    }
-    .wind-speed-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-right: 5px;
-        margin-top: 10px;
-    }
-    .wind-dir-div{
-        width: 50%;
-        background-color: #1d1d1f75;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 15px;
-        margin-left: 5px;
-        margin-top: 10px;
-    }
-    .category-title-div{
+        text-align: center;
         margin-bottom: 10px;
     }
-    .min-temp, .max-temp, .feeltemp, .pressure, .humidity, .wind-speed, .wind-dir{
-        font-size: 30px;
-    }
-    .small-unit{
+    .unit-button{
+        background-color: #1d1d1f75;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        letter-spacing: 0px;
         font-size: 20px;
+    }
+    .button-container a:hover .unit-button{
+        background-color: #1d1d1fab;
+    }
+    .footnote {
+        font-size: 14px !important;
+        line-height: 20px;
     }
 }

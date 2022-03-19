@@ -21,6 +21,26 @@
         <div class="footer">
             <div class="footer-nav">
                 <div class="footer-nav-links">
+                    <div class="units">
+                        <div class="footer-checkbox">
+                            <label for="unitsCheck" class="checkbox-label">
+                                <div class="label-div">
+                                    Units
+                                </div>
+                            </label>
+                            <div class="check-div">
+                                <input type="checkbox" id="unitsCheck">
+                            </div>
+                        </div>
+                        <div class="footer-nav-col" id="units">
+                            <span class="footer-col-heads">Units<br></span>
+                            <ul>
+                                <li><a href="/unit/metric">Metric</a></li>
+                                <li><a href="/unit/imperial">Imperial</a></li>
+                                <li><a href="/unit/Standard">Standard</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="connect">
                         <div class="footer-checkbox">
                             <label for="connectCheck" class="checkbox-label">
@@ -133,6 +153,14 @@
         showTime();
     </script>
     <script>
+        $('#unitsCheck').change(function(){
+            if (this.checked) {
+                $('#units').fadeIn(250);
+            } else {
+                $('#units').fadeOut(250);
+            }                   
+        });
+
         $('#connectCheck').change(function(){
             if (this.checked) {
                 $('#connect').fadeIn(250);

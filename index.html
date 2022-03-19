@@ -55,92 +55,31 @@
         </nav>
         <noscript>Please enable JavaScript!</noscript>
         <div class="main-head">
-            <div class="input-div">
-                <input type="text" id="input-box" class="input-box" placeholder="Search for a city" autocomplete="off">
-            </div>
-            <div class="instructions">
-                To get weather, enter a city name and then press enter or return on keyboard.
-            </div>
-            <div class="weather-container">
-                <div class="weather-subcontainer1">
-                    <div class="date-day-div">
-                        <b>
-                            <span class="date" id="date"></span>
-                            <span class="day" id="day"></span>
-                        </b>
-                    </div>
-                    <div class="city-country-div">
-                        <span class="city" id="city"></span>
-                        <span class="country" id="country"></span>
-                    </div>
+            <div class="heading-container">
+                <div class="heading-div">
+                    <b>Select a unit system.</b>
                 </div>
-                <div class="weather-subcontainer2">
-                    <div class="weather-div1">
-                        <div class="temp-div">
-                            <span class="temp" id="temp"></span>
-                        </div>
-                        <div class="weather-condition-div">
-                            <span class="weather-condition" id="weather-condition"></span>
-                        </div>
-                        <div class="weather-div1-sub">
-                            <div class="min-temp-div">
-                                <div class="category-title-div">MINIMUM</div>
-                                <span class="min-temp" id="min-temp"></span>
-                            </div>
-                            <div class="max-temp-div">
-                                <div class="category-title-div">
-                                    MAXIMUM
-                                </div>
-                                <span class="max-temp" id="max-temp"></span>
-                            </div>
-                        </div>
+            </div>
+            <div class="button-container">
+                <a href="/unit/metric/">
+                    <div class="unit-button">
+                        <b>METRIC</b>
                     </div>
-                    <div class="weather-div2">
-                        <div class="weather-div2-sub1">
-                            <div class="feeltemp-div">
-                                <div class="category-title-div">
-                                    FEELS LIKE
-                                </div>
-                                <span class="feeltemp" id="feeltemp"></span>
-                            </div>
-                            <div class="clouds-div">
-                                <div class="category-title-div">
-                                    CLOUDS
-                                </div>
-                                <span class="clouds" id="clouds"></span>
-                            </div>
-                        </div>
-                        <div class="weather-div2-sub2">
-                            <div class="pressure-div">
-                                <div class="category-title-div">
-                                    PRESSURE
-                                </div>
-                                <span class="pressure" id="pressure"></span> <span class="small-unit">hPa</span>
-                            </div>
-                            <br>
-                            <div class="humidity-div">
-                                <div class="category-title-div">
-                                    HUMIDITY
-                                </div>
-                                <span class="humidity" id="humidity"></span>
-                            </div>
-                        </div>
-                        <div class="weather-div2-sub3">
-                            <div class="wind-speed-div">
-                                <div class="category-title-div">
-                                    WIND SPEED
-                                </div>
-                                <span class="wind-speed" id="wind-speed"></span> <span class="small-unit">km/h</span>
-                            </div>
-                            <div class="wind-dir-div">
-                                <div class="category-title-div">
-                                    WIND DIRECTION
-                                </div>
-                                <span class="wind-dir" id="wind-dir"></span>
-                            </div>
-                        </div>
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="/unit/imperial/">
+                    <div class="unit-button">
+                        <b>IMPERIAL</b>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="/unit/standard/">
+                    <div class="unit-button">
+                        <b>STANDARD</b>
+                    </div>
+                </a>
             </div>
         </div>
         <script src="/pages/first-page/script.js"></script>
